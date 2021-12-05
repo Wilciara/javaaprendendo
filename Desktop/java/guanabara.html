@@ -26,5 +26,27 @@
             res.innerHTML += `<p>Dirija sempre com cinto</p>`              
         }
     </script>
+    <div> 
+        <h1>Qual seu País?</h1>
+        País <input type="pais" name="txtpais" id="txtpais">
+        <input type="button" value="verificar" onclick="check">
+        <div id="checkpais">
+                    
+    </div>
+    <script>
+        function check(){
+            var txtpais = window.document.querySelector('inputtxtpais')
+            var checkpais = window.document.querySelector('div#checkpais')
+            checkpais.innerHTML = `<p> Seu país é <strong>${pais}<strong></p>`
+                if (pais != 'Brasil'){
+                    checkpais.innerHTML = `<p><strong> Estrangeiro</strong></p>` 
+                }
+                else {
+                checkpais.innerHTML = `<p> VocÊ é <strong>Brasileiro!</strong></p>`
+            }
+
+        }
+    </script>
 </body>
 </html>
+
